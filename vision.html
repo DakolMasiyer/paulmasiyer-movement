@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vision for Mangu/Bokkos | <img src="assets/img/logo/pmm-logo-white.svg" style="height:40px;"> 2027</title>
+  <meta name="description" content="<img src="assets/img/logo/pmm-logo-white.svg" style="height:40px;">'s eight-pillar vision for Mangu/Bokkos: security, farming support, education, youth empowerment, infrastructure, women's rights, cultural heritage, and national representation." />
+  <meta name="keywords" content="Paul Masiyer vision, Mangu Bokkos agenda, AVM Masiyer policy, Plateau State development, Mangu constituency priorities 2027" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://paulmasiyer.com/vision.html" />
+  <meta property="og:title"       content="Vision for Mangu/Bokkos | <img src="assets/img/logo/pmm-logo-white.svg" style="height:40px;"> 2027" />
+  <meta property="og:description" content="Eight clear priorities for Mangu/Bokkos: security, farming, education, youth, infrastructure, and a strong voice at the national level." />
+  <meta property="og:url"         content="https://paulmasiyer.com/vision.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Barlow:wght@300;400;500;600;700;800&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/design-system.css" />
+  <link rel="stylesheet" href="assets/css/nav-footer.css" />
+
+  <style>
+    /* ── VISION PILLARS ── */
+    .vision-intro-section {
+      background: var(--cream);
+      padding: var(--section-pad) var(--page-gutter);
+    }
+
+    .vision-intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .vision-intro-text p {
+      font-size: var(--text-lg);
+      line-height: 1.9;
+      color: var(--text-mid);
+      margin-bottom: 1.3rem;
+    }
+
+    .vision-pillars-section {
+      background: var(--white);
+      padding: var(--section-pad) var(--page-gutter);
+    }
+
+    .pillars-full-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      margin-top: 3.5rem;
+    }
+
+    .pillar-full-card {
+      display: grid;
+      grid-template-columns: 64px 1fr;
+      gap: 1.5rem;
+      padding: 2rem;
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      transition: all var(--transition);
+    }
+
+    .pillar-full-card:hover {
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-3px);
+    }
+
+    .pillar-full-icon-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .pillar-full-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.14em;
+      color: var(--gold);
+    }
+
+    .pillar-full-icon {
+      font-size: 2rem;
+    }
+
+    .pillar-full-line {
+      flex: 1;
+      width: 1px;
+      background: rgba(201,168,76,0.25);
+      margin-top: 8px;
+    }
+
+    .pillar-full-title {
+      font-family: 'Barlow', sans-serif;
+      font-weight: 800;
+      font-size: 1.05rem;
+      color: var(--green-deep);
+      margin-bottom: 0.75rem;
+      line-height: 1.3;
+    }
+
+    .pillar-full-body {
+      font-size: 0.95rem;
+      color: var(--text-mid);
+      line-height: 1.8;
+    }
+
+    .pillar-full-points {
+      margin-top: 0.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .pillar-full-point {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      line-height: 1.5;
+    }
+
+    .pillar-full-point::before {
+      content: '✦';
+      color: var(--gold);
+      font-size: 0.6rem;
+      margin-top: 3px;
+      flex-shrink: 0;
+    }
+
+    /* ── COMMITMENT BAND ── */
+    .commitment-band {
+      background: var(--green-deep);
+      padding: var(--section-pad) var(--page-gutter);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .commitment-band::before {
+      content: '2027';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(12rem, 30vw, 28rem);
+      color: rgba(255,255,255,0.025);
+      pointer-events: none;
+      line-height: 1;
+    }
+
+    .commitment-inner {
+      position: relative;
+      z-index: 2;
+    }
+
+    .commitment-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .commitment-item {
+      padding: 2rem 1.5rem;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius-sm);
+      background: rgba(255,255,255,0.03);
+    }
+
+    .commitment-icon {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .commitment-label {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.3rem;
+      color: var(--gold);
+      letter-spacing: 0.04em;
+      margin-bottom: 0.5rem;
+    }
+
+    .commitment-desc {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.65;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .commitment-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 768px) {
+      .vision-intro-grid  { grid-template-columns: 1fr; gap: 3rem; }
+      .pillars-full-grid  { grid-template-columns: 1fr; }
+      .commitment-grid    { grid-template-columns: 1fr 1fr; }
+      .pillar-full-card   { grid-template-columns: 48px 1fr; gap: 1rem; }
+    }
+
+    @media (max-width: 480px) {
+      .commitment-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+<link rel="icon" href="assets/img/logo/pmm-favicon.png">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/img/logo/pmm-logo-white.svg" style="height:40px;"></span>
+      <span class="sub">Mangu/Bokkos · 2027</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="vision.html" class="active">Vision</a>
+      <a href="community.html">Community</a>
+      <a href="news.html">News</a>
+      <a href="join.html" class="nav-cta-btn">Join the Movement</a>
+    </div>
+    <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  
+<div class="breadcrumb">
+  <a href="index.html">Home</a>
+  <span class="sep">/</span>
+  <span class="current">Vision</span>
+</div>
+<nav class="nav-drawer">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="vision.html">Vision</a>
+    <a href="community.html">Community</a>
+    <a href="news.html">News &amp; Media</a>
+    <a href="join.html">✦ Join the Movement</a>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-accent"></div>
+    <div class="page-hero-bg-word">PROGRESS</div>
+    <div class="page-hero-content">
+      <p class="eyebrow" style="color:var(--gold);">The Agenda · 2027</p>
+      <h1 class="page-hero-title">A Vision for<br><span class="accent">Mangu/Bokkos</span></h1>
+      <p class="page-hero-lead">Eight clear priorities. Shaped by three decades of national service. Built around the real needs, real challenges, and real aspirations of our constituency.</p>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="vision-intro-section">
+    <div class="vision-intro-grid">
+      <div class="reveal-left">
+        <p class="eyebrow">Why This Agenda</p>
+        <h2 class="section-title">Priorities Built<br>on <span class="accent">Listening</span></h2>
+        <div class="section-divider"></div>
+        <p><img src="assets/img/logo/pmm-logo-white.svg" style="height:40px;">'s vision for Mangu/Bokkos is not a politician's checklist. It is a structured agenda shaped by decades of managing national systems, listening to communities, and understanding what genuine representation at the National Assembly can unlock for a constituency.</p>
+        <p>Our constituency deserves a leader who arrives in Abuja knowing exactly what to fight for — and having the credibility, discipline, and connections to deliver it.</p>
+        <p>These eight priorities are that agenda. Not vague promises. A clear programme.</p>
+      </div>
+      <div class="reveal-right delay-1" style="background:var(--green-deep);border-radius:var(--radius-sm);padding:2.5rem;">
+        <p style="font-family:'Crimson Pro',serif;font-style:italic;font-size:1.2rem;color:var(--white);line-height:1.7;margin-bottom:1.5rem;">"Our constituency deserves strong and visionary leadership anchored on strong morals and distinguished pedigree."</p>
+        <p style="font-size:0.72rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);">— <img src="assets/img/logo/pmm-logo-white.svg" style="height:40px;">, Rtd.</p>
+        <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,0.1);">
+          
+            
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FULL PILLARS -->
+  <section class="vision-pillars-section">
+    <p class="eyebrow centered reveal">Eight Pillars</p>
+    <h2 class="section-title reveal delay-1" style="text-align:center;">The <span class="accent">Programme</span></h2>
+    <div class="section-divider centered reveal delay-2"></div>
+
+    <div class="pillars-full-grid">
+      <div class="pillar-full-card reveal">
+        <div class="pillar-full-icon-col">
+          <span class="pillar-full-num">01</span>
+          <span class="pillar-full-icon">🛡️</span>
+          <div class="pillar-full-line"></div>
+        </div>
+        <div>
+          <div class="pillar-full-title">Security &amp; Lasting Peace</div>
+          <p class="pillar-full-body">Security is the foundation on which everything else is built. Without it, farming is dangerous, businesses cannot grow, and children cannot attend school safely. AVM Masiyer brings a military strategist's understanding of security — and will use his National Assembly platform to drive structural solutions to the farmer-herder crisis.</p>
+          <div class="pillar-full-points">
+            <span class="pillar-full-point">Engage federal security institutions with firsthand knowledge of their capabilities</span>
+            <span class="pillar-full-point">Facilitate dialogue between farming and herding communities at the national level</span>
+            <span class="pillar-full-point">Advocate for improved security deployment and early warning systems</span>
+            <span class="pillar-full-point">Support community policing and local security infrastructure through federal budgets</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pillar-full-card reveal delay-1">
+        <div class="pillar-full-icon-col">
+          <span class="pillar-full-num">02</span>
+          <span class="pillar-full-icon">🌾</span>
+          <div class="pillar-full-line"></div>
+        </div>
+        <div>
+          <div class="pillar-full-title">Farming &amp; Local Business Support</div>
+          <p class="pillar-full-body">Mangu/Bokkos is a farming constituency. Its people deserve a representative who will fight for them in the halls where federal agricultural policy is made — from crop insurance to storage infrastructure to market access.</p>
+          <div class="pillar-full-points">
+            <span class="pillar-full-point">Advocate for federal agricultural programmes targeting small-scale farmers</span>
+            <span class="pillar-full-point">Push for post-harvest storage and rural market infrastructure</span>
+            <span class="pillar-full-point">Support access to affordable farm inputs through federal agencies</span>
+            <span class="pillar-full-point">Champion local business development and cooperative structures</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pillar-full-card reveal delay-1">
+        <div class="pillar-full-icon-col">
+          <span class="pillar-full-num">03</span>
+          <span class="pillar-full-icon">🎓</span>
+          <div class="pillar-full-line"></div>
+        </div>
+        <div>
+          <div class="pillar-full-title">Quality Education &amp; Healthcare</div>
+          <p class="pillar-full-body">Every child in Mangu/Bokkos deserves access to quality education. Every family deserves functional healthcare. AVM Masiyer will work to direct federal allocations toward school infrastructure, trained teachers, health centres, and essential medicines.</p>
+          <div class="pillar-full-points">
+            <span class="pillar-full-point">Engage UBEC and TETFUND for school construction and rehabilitation</span>
+            <span class="pillar-full-point">Advocate for Primary Healthcare Centre upgrades across wards</span>
+            <span class="pillar-full-point">Support teacher training and deployment programmes</span>
+            <span class="pillar-full-point">Push for constituency-specific health outreach campaigns</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pillar-full-card reveal delay-2">
+        <div class="pillar-full-icon-col">
+          <span class="pillar-full-num">04</span>
+          <span class="pillar-full-icon">🌟</span>
+          <div class="pillar-full-line"></div>
+        </div>
+        <div>
+          <div class="pillar-full-title">Youth Empowerment &amp; Employment</div>
+          <p class="pillar-full-body">The young people of Mangu/Bokkos are talented, driven, and deserving of real opportunity. AVM Masiyer is committed to connecting them to federal skill acquisition programmes, entrepreneurship funding, and employment creation initiatives.</p>
+          <div class="pillar-full-points">
+            <span class="pillar-full-point">Direct federal skill acquisition centres to the constituency</span>
+            <span class="pillar-full-point">Engage NPOWER, YOUWIN, and similar federal schemes for local beneficiaries</span>
+            <span class="pillar-full-point">Support youth-owned SMEs through CBN and BOI programmes</span>
+            <span class="pillar-full-point">Advocate for youth inclusion in federal appointments and scholarship schemes</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pillar-full-card reveal delay-2">
+        <div class="pillar-full-icon-col">
+          <span class="pillar-full-num">05</span>
+          <span class="pillar-full-icon">🏗️</span>
+          <div class="pillar-full-line"></div>
+        </div>
+        <div>
+          <div class="pillar-full-title">Economic &amp; Physical Development</div>
+          <p class="pillar-full-body">Infrastructure is the enabler of all economic activity. Roads, electricity, water, and connectivity are not luxuries — they are prerequisites for a constituency that can grow. AVM Masiyer will fight for Mangu/Bokkos in every federal budget cycle.</p>
+          <div class="pillar-full-points">
+            <span class="pillar-full-point">Use constituency project allocations strategically and transparently</span>
+            <span class="pillar-full-point">Engage FERMA, REC, and federal ministries for road rehabilitation</span>
+            <span class="pillar-full-point">Advocate for REA rural electrification and RUWASSA water projects</span>
+            <span class="pillar-full-point">Facilitate FDI and public-private partnership opportunities for the constituency</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pillar-full-card reveal delay-3">
+        <div class="pillar-full-icon-col">
+          <span class="pillar-full-num">06</span>
+          <span class="pillar-full-icon">👩‍👧‍👦</span>
+          <div class="pillar-full-line"></div>
+        </div>
+        <div>
+          <div class="pillar-full-title">Women, Youth, Elderly &amp; the Vulnerable</div>
+          <p class="pillar-full-body">True representation means no one is left behind. AVM Masiyer is committed to targeted empowerment for women, elderly citizens, people living with disability, and the most vulnerable in our communities — ensuring they benefit from federal programmes designed to serve them.</p>
+          <div class="pillar-full-points">
+            <span class="pillar-full-point">Ensure women and elderly groups benefit from TraderMoni and similar federal schemes</span>
+            <span class="pillar-full-point">Advocate for disability-inclusive federal programme delivery in the constituency</span>
+            <span class="pillar-full-point">Support social protection and safety net programmes at the local level</span>
+            <span class="pillar-full-point">Champion legislative reforms that protect women and vulnerable populations</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pillar-full-card reveal delay-3">
+        <div class="pillar-full-icon-col">
+          <span class="pillar-full-num">07</span>
+          <span class="pillar-full-icon">🏛️</span>
+          <div class="pillar-full-line"></div>
+        </div>
+        <div>
+          <div class="pillar-full-title">Cultural Heritage &amp; Societal Engagement</div>
+          <p class="pillar-full-body">Mangu/Bokkos has a rich, proud, and distinct cultural identity. AVM Masiyer will champion positive societal engagement — fostering cultural pride within our constituency and projecting it outward to the national and international stage.</p>
+          <div class="pillar-full-points">
+            <span class="pillar-full-point">Support cultural festivals and heritage preservation initiatives</span>
+            <span class="pillar-full-point">Advocate for cultural tourism development in the constituency</span>
+            <span class="pillar-full-point">Engage NCAC and federal cultural bodies for constituency programmes</span>
+            <span class="pillar-full-point">Ensure the voices of traditional institutions are represented at the federal level</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pillar-full-card reveal delay-4">
+        <div class="pillar-full-icon-col">
+          <span class="pillar-full-num">08</span>
+          <span class="pillar-full-icon">🗣️</span>
+          <div class="pillar-full-line"></div>
+        </div>
+        <div>
+          <div class="pillar-full-title">A Powerful Voice at the National Stage</div>
+          <p class="pillar-full-body">This is the overarching commitment: that when important federal decisions are made, the name Mangu/Bokkos is heard. AVM Masiyer's military rank, his professional relationships, and his credibility give this constituency a representative who walks into any room with authority.</p>
+          <div class="pillar-full-points">
+            <span class="pillar-full-point">Leverage national networks from a 35-year military career for constituency benefit</span>
+            <span class="pillar-full-point">Ensure Mangu/Bokkos is represented in key House committees</span>
+            <span class="pillar-full-point">Use the floor of the House to speak for the security and development needs of our people</span>
+            <span class="pillar-full-point">Build cross-party relationships that deliver results, not just rhetoric</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMITMENT BAND -->
+  <section class="commitment-band">
+    <div class="commitment-inner">
+      <p class="eyebrow centered" style="color:var(--gold);">The Commitment</p>
+      <h2 class="section-title on-dark" style="text-align:center;">What AVM Masiyer<br><span style="color:var(--gold);">Pledges</span> to Mangu/Bokkos</h2>
+      <div class="section-divider centered"></div>
+
+      <div class="commitment-grid">
+        <div class="commitment-item reveal">
+          <div class="commitment-icon">⚖️</div>
+          <div class="commitment-label">Accountability</div>
+          <div class="commitment-desc">Transparent use of constituency project funds. Public reporting on allocations and delivery.</div>
+        </div>
+        <div class="commitment-item reveal delay-1">
+          <div class="commitment-icon">🔊</div>
+          <div class="commitment-label">Visibility</div>
+          <div class="commitment-desc">Mangu/Bokkos will be heard. In every federal budget discussion. In every relevant House committee.</div>
+        </div>
+        <div class="commitment-item reveal delay-2">
+          <div class="commitment-icon">🤝</div>
+          <div class="commitment-label">Access</div>
+          <div class="commitment-desc">Regular constituency clinics. Open lines of communication. A representative who comes home — not just at election time.</div>
+        </div>
+        <div class="commitment-item reveal delay-3">
+          <div class="commitment-icon">🌱</div>
+          <div class="commitment-label">Legacy</div>
+          <div class="commitment-desc">Building a foundation that lasts beyond one term. Infrastructure, institutions, and human capacity for the next generation.</div>
+        </div>
+      </div>
+
+      <div style="margin-top:3.5rem;" class="btn-group flex-center">
+        <a href="join.html" class="btn btn-primary">Stand With This Vision</a>
+        <a href="community.html" class="btn btn-outline-light">Community Engagement</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name"><img src="assets/img/logo/pmm-logo-white.svg" style="height:40px;"></span></div>
+        <p class="footer-tagline">Leadership with Integrity · 2027</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-link" aria-label="Facebook">f</a>
+          <a href="#" class="footer-social-link" aria-label="Twitter/X">𝕏</a>
+          <a href="#" class="footer-social-link" aria-label="Instagram">ig</a>
+          <a href="#" class="footer-social-link" aria-label="WhatsApp">wa</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="vision.html">Vision</a></li>
+          <li><a href="community.html">Community &amp; Security</a></li>
+          <li><a href="news.html">News &amp; Media</a></li>
+          <li><a href="join.html">Join the Movement</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Campaign Tags</h4>
+        <ul>
+          <li><a href="news.html">#ManguBokkos</a></li>
+          <li><a href="news.html">#LeadershipWithIntegrity</a></li>
+          <li><a href="news.html">#NewDawn</a></li>
+          <li><a href="news.html">#PaulMasiyer</a></li>
+          <li><a href="news.html">#SpreadTheMessage</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Contact Campaign</h4>
+        <address>Mangu/Bokkos Federal Constituency<br />Plateau State, Nigeria<br /><br />APC · 2027 General Elections</address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-legal">© 2025–2027 <img src="assets/img/logo/pmm-logo-white.svg" style="height:40px;"> Campaign. All rights reserved.</p>
+      <div class="footer-tags">
+        <span>#ManguBokkos</span><span>#LeadershipWithIntegrity</span><span>#PaulMasiyer</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/234XXXXXXXXXX?text=JOIN" class="fab-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Join via WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

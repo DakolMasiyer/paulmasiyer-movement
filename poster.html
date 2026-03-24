@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>PMM Poster</title>
+<link rel="icon" href="assets/img/logo/pmm-favicon.png">
+</head>
+<body style="background:#0B5D2A;color:white;text-align:center;font-family:Arial;">
+
+<img src="assets/img/logo/pmm-logo-white.svg" style="height:60px;margin-top:20px;">
+
+<h2>Create Your PMM Support Poster</h2>
+
+<input id="name" placeholder="Your Name"><br>
+<input id="loc" placeholder="Ward / LGA"><br>
+
+<button onclick="gen()">Generate</button>
+
+<canvas id="c" width="600" height="800"></canvas><br>
+
+<button onclick="download()">Download</button>
+<button onclick="wa()">WhatsApp</button>
+
+<script>
+const logo=new Image();
+logo.src="assets/img/logo/pmm-logo-white.svg";
+
+function gen(){
+const ctx=document.getElementById("c").getContext("2d");
+ctx.fillStyle="#0B5D2A";
+ctx.fillRect(0,0,600,800);
+
+logo.onload=function(){
+ctx.drawImage(logo,250,40,100,100);
+}
+
+ctx.fillStyle="#fff";
+ctx.font="bold 30px Arial";
+ctx.fillText("I SUPPORT PMM",150,300);
+
+ctx.fillText(document.getElementById("name").value,150,360);
+ctx.fillText(document.getElementById("loc").value,150,400);
+}
+
+function download(){
+let a=document.createElement('a');
+a.download='poster.png';
+a.href=document.getElementById("c").toDataURL();
+a.click();
+}
+
+function wa(){
+window.open("https://wa.me/?text=I support PMM Movement");
+}
+</script>
+
+</body>
+</html>

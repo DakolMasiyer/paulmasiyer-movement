@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About <img src="assets/img/logo/pmm-logo-white.svg" style="height:40px;"> | Biography &amp; Military Career</title>
+  <meta name="description" content="Learn about Air Vice Marshal Paul D. Masiyer (Rtd.) — his distinguished military career, service as Chief of Logistics HQ NAF, and his vision for Mangu/Bokkos constituency." />
+  <meta name="keywords" content="Paul Masiyer biography, <img src="assets/img/logo/pmm-logo-white.svg" style="height:40px;"> military career, Chief of Logistics NAF, Mangu Bokkos candidate, Air Vice Marshal Nigeria" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://paulmasiyer.com/about.html" />
+  <meta property="og:title"       content="About <img src="assets/img/logo/pmm-logo-white.svg" style="height:40px;"> | Biography &amp; Military Career" />
+  <meta property="og:description" content="35 years of distinguished service. Former Chief of Logistics, HQ NAF. A Plateau son returning home to serve Mangu/Bokkos." />
+  <meta property="og:url"         content="https://paulmasiyer.com/about.html" />
+  <meta property="og:image"       content="https://paulmasiyer.com/assets/img/og-about.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Barlow:wght@300;400;500;600;700;800&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/design-system.css" />
+  <link rel="stylesheet" href="assets/css/nav-footer.css" />
+
+  <style>
+    /* ── BIO SECTION ── */
+    .bio-section {
+      background: var(--cream);
+      padding: var(--section-pad) var(--page-gutter);
+    }
+
+    .bio-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 5rem;
+      align-items: start;
+    }
+
+    .bio-portrait-stack {
+      position: sticky;
+      top: calc(var(--nav-height) + 24px);
+    }
+
+    .bio-portrait-main {
+      width: 100%;
+      aspect-ratio: 3/4;
+      background: linear-gradient(145deg, var(--green-subtle), #c8e6cd);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .bio-portrait-main img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    .bio-portrait-secondary {
+      width: 100%;
+      aspect-ratio: 4/3;
+      background: linear-gradient(145deg, var(--green-light), var(--green-mid));
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .bio-portrait-secondary img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .bio-caption {
+      background: var(--gold);
+      padding: 10px 16px;
+      border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+    }
+
+    .bio-caption-name {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.1rem;
+      color: var(--green-deep);
+      letter-spacing: 0.08em;
+    }
+
+    .bio-caption-title {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(10, 76, 31, 0.65);
+      margin-top: 1px;
+    }
+
+    .bio-text h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: var(--display-sm);
+      color: var(--green-deep);
+      letter-spacing: 0.02em;
+      margin: 2.5rem 0 1rem;
+    }
+
+    .bio-text h3:first-child { margin-top: 0; }
+
+    .bio-text p {
+      font-size: var(--text-lg);
+      line-height: 1.9;
+      color: var(--text-mid);
+      margin-bottom: 1.3rem;
+    }
+
+    .bio-text p strong { color: var(--green-deep); }
+
+    .bio-text blockquote {
+      border-left: 3px solid var(--gold);
+      padding: 1rem 1.5rem;
+      margin: 2rem 0;
+      background: var(--white);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    }
+
+    .bio-text blockquote p {
+      font-family: 'Crimson Pro', serif;
+      font-style: italic;
+      font-size: 1.25rem;
+      color: var(--text-mid);
+      margin-bottom: 0;
+    }
+
+    /* ── TIMELINE SECTION ── */
+    .timeline-section {
+      background: var(--green-deep);
+      padding: var(--section-pad) var(--page-gutter);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .timeline-section::before {
+      content: 'SERVICE';
+      position: absolute;
+      bottom: -5%;
+      right: -3%;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(8rem, 18vw, 18rem);
+      color: rgba(255,255,255,0.025);
+      pointer-events: none;
+      line-height: 1;
+    }
+
+    .timeline-inner {
+      position: relative;
+      z-index: 2;
+    }
+
+    .timeline-header {
+      max-width: 640px;
+      margin-bottom: 4rem;
+    }
+
+    .timeline-track {
+      position: relative;
+      padding-left: 2px;
+    }
+
+    .timeline-track::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 12px;
+      bottom: 12px;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--gold) 0%, rgba(201,168,76,0.15) 100%);
+    }
+
+    .tl-item {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 2.5rem;
+      padding: 0 0 3rem 2.5rem;
+      position: relative;
+    }
+
+    .tl-item::before {
+      content: '';
+      position: absolute;
+      left: -5px;
+      top: 10px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--gold);
+      border: 2px solid var(--green-deep);
+      box-shadow: 0 0 0 2px var(--gold);
+      z-index: 1;
+    }
+
+    .tl-item.highlight::before {
+      width: 16px;
+      height: 16px;
+      left: -7px;
+      background: var(--gold-light);
+      box-shadow: 0 0 0 3px var(--gold), 0 0 16px rgba(201,168,76,0.4);
+    }
+
+    .tl-period {
+      text-align: right;
+    }
+
+    .tl-year-label {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1rem;
+      letter-spacing: 0.12em;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .tl-era {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.3);
+    }
+
+    .tl-content-title {
+      font-family: 'Barlow', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+
+    .tl-content-org {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.5);
+      font-style: italic;
+      margin-bottom: 0.75rem;
+    }
+
+    .tl-content-desc {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.75;
+    }
+
+    /* ── VALUES SECTION ── */
+    .values-section {
+      background: var(--white);
+      padding: var(--section-pad) var(--page-gutter);
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .value-card {
+      padding: 2rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: var(--cream);
+      transition: all var(--transition);
+    }
+
+    .value-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      background: var(--white);
+    }
+
+    .value-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .value-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.5rem;
+      color: var(--green-deep);
+      letter-spacing: 0.04em;
+      margin-bottom: 0.75rem;
+    }
+
+    .value-desc {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+
+    /* ── CTA BAND ── */
+    .about-cta {
+      background: var(--gold);
+      padding: 60px var(--page-gutter);
+      text-align: center;
+    }
+
+    .about-cta h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: var(--display-md);
+      color: var(--green-deep);
+      margin-bottom: 0.75rem;
+    }
+
+    .about-cta p {
+      font-family: 'Crimson Pro', serif;
+      font-style: italic;
+      font-size: 1.2rem;
+      color: rgba(10,76,31,0.75);
+      margin-bottom: 2rem;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .bio-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .bio-portrait-stack { position: static; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+      .bio-caption { display: none; }
+
+      .tl-item { grid-template-columns: 1fr; gap: 0.5rem; padding-left: 2rem; }
+      .tl-period { text-align: left; }
+
+      .values-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .bio-portrait-stack { grid-template-columns: 1fr; }
+      .bio-portrait-secondary { display: none; }
+      .values-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+<link rel="icon" href="assets/img/logo/pmm-favicon.png">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/img/logo/pmm-logo-white.svg" style="height:40px;"></span>
+      <span class="sub">Mangu/Bokkos · 2027</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="vision.html">Vision</a>
+      <a href="community.html">Community</a>
+      <a href="news.html">News</a>
+      <a href="join.html" class="nav-cta-btn">Join the Movement</a>
+    </div>
+    <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  
+<div class="breadcrumb">
+  <a href="index.html">Home</a>
+  <span class="sep">/</span>
+  <span class="current">About</span>
+</div>
+<nav class="nav-drawer">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="vision.html">Vision</a>
+    <a href="community.html">Community</a>
+    <a href="news.html">News &amp; Media</a>
+    <a href="join.html">✦ Join the Movement</a>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-accent"></div>
+    <div class="page-hero-bg-word">LEGACY</div>
+    <div class="page-hero-content">
+      <p class="eyebrow" style="color:var(--gold);">Biography &amp; Military Career</p>
+      <h1 class="page-hero-title">The Man<br>Behind the <span class="accent">Rank</span></h1>
+      <p class="page-hero-lead">A lifetime of service to Nigeria. A career that reached the very peak of the nation's military. And now — a return home to serve the people of Mangu/Bokkos.</p>
+    </div>
+  </section>
+
+  <!-- BIO SECTION -->
+  <section class="bio-section">
+    <div class="bio-grid">
+      <div class="bio-portrait-stack reveal-left">
+        <div class="bio-portrait-main">
+          <!-- Replace with: <img src="assets/img/portrait-hero.jpg" alt="<img src="assets/img/logo/pmm-logo-white.svg" style="height:40px;"> (Rtd.) in traditional attire" /> -->
+          <div style="text-align:center;padding:2rem;">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="rgba(10,76,31,0.15)" aria-hidden="true"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+            <p style="font-size:0.65rem;color:var(--text-muted);letter-spacing:0.1em;text-transform:uppercase;margin-top:8px;">assets/img/portrait-hero.jpg</p>
+          </div>
+        </div>
+        <div class="bio-caption">
+          <div class="bio-caption-name"><img src="assets/img/logo/pmm-logo-white.svg" style="height:40px;"></div>
+          <div class="bio-caption-title">Retired · Air Vice Marshal · Nigerian Air Force</div>
+        </div>
+        <div style="height:1rem;"></div>
+        <div class="bio-portrait-secondary">
+          <!-- Replace with: <img src="assets/img/portrait-apc.jpg" alt="AVM Masiyer with APC colours" /> -->
+          <div style="text-align:center;padding:1.5rem;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="rgba(255,255,255,0.25)" aria-hidden="true"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+            <p style="font-size:0.62rem;color:rgba(255,255,255,0.4);letter-spacing:0.1em;text-transform:uppercase;margin-top:8px;">assets/img/portrait-apc.jpg</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bio-text reveal-right">
+        <p class="eyebrow">Early Life &amp; Origins</p>
+        <h2 class="section-title">A Son of<br><span class="accent">Plateau State</span></h2>
+        <div class="section-divider"></div>
+
+        <p>
+          Air Vice Marshal Paul D. Masiyer (Rtd.) was born and raised in <strong>Mangu/Bokkos Federal Constituency, Plateau State</strong> — the very land he now seeks to represent at the National Assembly. His roots in this constituency are not incidental. They are the reason he is running.
+        </p>
+
+        <p>
+          Growing up in Plateau State, AVM Masiyer developed a deep understanding of the aspirations and challenges of his people — the farming communities, the churches, the markets, the youth. That grounding never left him through three and a half decades of military service.
+        </p>
+
+        <h3>Military Career</h3>
+        <p>
+          AVM Masiyer joined the <strong>Nigerian Air Force</strong> and rose through the ranks with a combination of technical excellence, strategic thinking, and unwavering dedication to duty. Over the course of his career, he attained the rank of <strong>Air Vice Marshal</strong> — the peak of commissioned service — earning the respect of peers and superiors across the armed forces.
+        </p>
+
+        <p>
+          Among his most senior appointments was his role as <strong>Chief of Logistics, Headquarters Nigerian Air Force (HQ NAF)</strong>, where he was responsible for the procurement, supply chain, and operational readiness systems that underpin the entire Air Force. Managing resources at this scale — ensuring thousands of personnel have what they need to defend the nation — demands the kind of precision, discipline, and integrity that defines AVM Masiyer's career.
+        </p>
+
+        <p>
+          He also served as <strong>Commandant of the Military Training Centre</strong>, shaping the next generation of Nigerian military officers. This role reflects not just his operational experience but his commitment to building capable, values-driven leaders — a commitment he now brings to public service.
+        </p>
+
+        <blockquote>
+          <p>"Having risen to the peak of military service, <img src="assets/img/logo/pmm-logo-white.svg" style="height:40px;"> now brings his wealth of experience, discipline, and strategic leadership back home — to serve his people at a different level."</p>
+        </blockquote>
+
+        <h3>Why Politics. Why Now.</h3>
+        <p>
+          Retirement from the military did not mean retirement from service. For AVM Masiyer, the end of his uniform career was the beginning of a different calling — one that brings the discipline of national defence directly to the community level.
+        </p>
+
+        <p>
+          Mangu/Bokkos is a constituency with <strong>real and urgent needs</strong>: security challenges rooted in farmer-herder conflict, a farming economy that deserves federal support, young people with talent but limited opportunity, and communities that have long felt underrepresented in national conversations.
+        </p>
+
+        <p>
+          AVM Masiyer believes that a leader with his background — someone who has managed national logistics, commanded training institutions, and understood Nigeria's security architecture from the inside — is precisely what Mangu/Bokkos needs at the House of Representatives.
+        </p>
+
+        <p>
+          He is running under the platform of the <strong>All Progressives Congress (APC)</strong>, aligned with the national agenda for security and development, and fully committed to working with all stakeholders — traditional rulers, faith leaders, women's groups, youth organisations, and farming communities — to reposition this constituency for peace, progress, and prosperity.
+        </p>
+
+        <div style="margin-top:2.5rem;" class="btn-group">
+          <a href="vision.html" class="btn btn-secondary">Explore His Vision</a>
+          <a href="join.html" class="btn btn-primary">Join the Movement</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE SECTION -->
+  <section class="timeline-section">
+    <div class="timeline-inner">
+      <div class="timeline-header">
+        <p class="eyebrow" style="color:var(--gold);">Career Milestones</p>
+        <h2 class="section-title on-dark">35 Years of<br><span style="color:var(--gold);">Distinguished Service</span></h2>
+        <div class="section-divider"></div>
+        <p class="section-lead on-dark">
+          From his commissioning into the Nigerian Air Force to retirement at its highest rank — a career defined by excellence, responsibility, and service to Nigeria.
+        </p>
+      </div>
+
+      <div class="timeline-track">
+        <div class="tl-item reveal">
+          <div class="tl-period">
+            <span class="tl-year-label">Early Career</span>
+            <span class="tl-era">Commissioned Officer</span>
+          </div>
+          <div>
+            <div class="tl-content-title">Commission &amp; Early Service</div>
+            <div class="tl-content-org">Nigerian Air Force</div>
+            <div class="tl-content-desc">AVM Masiyer was commissioned into the Nigerian Air Force, beginning a career built on technical mastery, discipline, and progressive leadership responsibility across multiple postings and commands.</div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal delay-1">
+          <div class="tl-period">
+            <span class="tl-year-label">Progression</span>
+            <span class="tl-era">Senior Officer</span>
+          </div>
+          <div>
+            <div class="tl-content-title">Rising Through Command</div>
+            <div class="tl-content-org">Various Commands, Nigerian Air Force</div>
+            <div class="tl-content-desc">Through progressively senior roles, he demonstrated the combination of operational skill and administrative capability that would mark him as one of the Air Force's most trusted senior officers.</div>
+          </div>
+        </div>
+
+        <div class="tl-item highlight reveal delay-2">
+          <div class="tl-period">
+            <span class="tl-year-label">Senior Command</span>
+            <span class="tl-era">Peak Responsibility</span>
+          </div>
+          <div>
+            <div class="tl-content-title">Chief of Logistics</div>
+            <div class="tl-content-org">Headquarters Nigerian Air Force (HQ NAF)</div>
+            <div class="tl-content-desc">As Chief of Logistics at HQ NAF, AVM Masiyer bore responsibility for the procurement, supply chain management, and operational logistics that keep the entire Air Force mission-ready. This role placed him at the heart of Nigeria's national defence infrastructure.</div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal delay-2">
+          <div class="tl-period">
+            <span class="tl-year-label">Training Command</span>
+            <span class="tl-era">Shaping Leaders</span>
+          </div>
+          <div>
+            <div class="tl-content-title">Commandant, Military Training Centre</div>
+            <div class="tl-content-org">Nigerian Air Force</div>
+            <div class="tl-content-desc">As Commandant, he shaped the training curriculum and standards for the next generation of Air Force officers — embedding discipline, integrity, and excellence into Nigeria's future military leadership.</div>
+          </div>
+        </div>
+
+        <div class="tl-item highlight reveal delay-3">
+          <div class="tl-period">
+            <span class="tl-year-label">Peak Rank</span>
+            <span class="tl-era">Pinnacle of Service</span>
+          </div>
+          <div>
+            <div class="tl-content-title">Air Vice Marshal</div>
+            <div class="tl-content-org">Nigerian Air Force — Highest Commissioned Rank Achieved</div>
+            <div class="tl-content-desc">AVM Masiyer attained the rank of Air Vice Marshal — the pinnacle of the Nigerian Air Force's officer corps — representing over three decades of exemplary service, trusted at the very highest levels of national defence.</div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal delay-3">
+          <div class="tl-period">
+            <span class="tl-year-label">Retirement</span>
+            <span class="tl-era">New Mission</span>
+          </div>
+          <div>
+            <div class="tl-content-title">Honourable Retirement &amp; Return Home</div>
+            <div class="tl-content-org">Mangu/Bokkos, Plateau State</div>
+            <div class="tl-content-desc">After more than 35 years, AVM Masiyer retired with honour — and returned to where it all began. To Mangu/Bokkos. To his people. To begin a new chapter of service in public life.</div>
+          </div>
+        </div>
+
+        <div class="tl-item highlight reveal delay-4">
+          <div class="tl-period">
+            <span class="tl-year-label">2027</span>
+            <span class="tl-era">The Next Mission</span>
+          </div>
+          <div>
+            <div class="tl-content-title">Candidate — House of Representatives</div>
+            <div class="tl-content-org">APC · Mangu/Bokkos Federal Constituency, Plateau State</div>
+            <div class="tl-content-desc"><img src="assets/img/logo/pmm-logo-white.svg" style="height:40px;"> (Rtd.) announces his candidacy for the House of Representatives. The mission: bring experienced, disciplined, community-focused leadership to the National Assembly — for Mangu, for Bokkos, for Plateau State.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES SECTION -->
+  <section class="values-section">
+    <div style="text-align:center; max-width:600px; margin: 0 auto 0;">
+      <p class="eyebrow centered reveal">What He Stands For</p>
+      <h2 class="section-title reveal delay-1" style="text-align:center;">Core <span class="accent">Values</span></h2>
+      <div class="section-divider centered reveal delay-2"></div>
+    </div>
+
+    <div class="values-grid">
+      <div class="value-card reveal">
+        <div class="value-icon">⚖️</div>
+        <div class="value-title">Integrity</div>
+        <div class="value-desc">35 years in a career where integrity is not optional — it is the foundation. AVM Masiyer brings that same unwavering standard to public life. No compromise on accountability.</div>
+      </div>
+      <div class="value-card reveal delay-1">
+        <div class="value-icon">🎯</div>
+        <div class="value-title">Discipline</div>
+        <div class="value-desc">Military service builds the habit of precision — doing the right thing, the right way, at the right time. He brings that discipline to every decision, every engagement, every promise made.</div>
+      </div>
+      <div class="value-card reveal delay-2">
+        <div class="value-icon">🤝</div>
+        <div class="value-title">Service</div>
+        <div class="value-desc">A career defined by service to Nigeria. Now, service to Mangu/Bokkos. Not power for its own sake — but representation as a responsibility to the people who elected you.</div>
+      </div>
+      <div class="value-card reveal delay-2">
+        <div class="value-icon">🧩</div>
+        <div class="value-title">Unity</div>
+        <div class="value-desc">This movement is about bringing communities together — across ethnic lines, faith traditions, and political affiliations. A constituency united is a constituency that gets results at the federal level.</div>
+      </div>
+      <div class="value-card reveal delay-3">
+        <div class="value-icon">💡</div>
+        <div class="value-title">Strategic Vision</div>
+        <div class="value-desc">A military career teaches you to think several steps ahead. AVM Masiyer approaches the challenges of Mangu/Bokkos not with quick fixes, but with structured, long-term strategy.</div>
+      </div>
+      <div class="value-card reveal delay-4">
+        <div class="value-icon">🌱</div>
+        <div class="value-title">Community First</div>
+        <div class="value-desc">Every policy position, every engagement, every campaign decision begins with one question: what is best for the people of Mangu/Bokkos? That answer drives everything.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="about-cta">
+    <h2>Ready to Join the Movement?</h2>
+    <p>AVM Masiyer's story is one of service. Now he needs yours.</p>
+    <div class="btn-group flex-center">
+      <a href="join.html" class="btn btn-secondary">Register Your Support</a>
+      <a href="vision.html" class="btn btn-outline-dark">Explore the Vision</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name"><img src="assets/img/logo/pmm-logo-white.svg" style="height:40px;"></span></div>
+        <p class="footer-tagline">Leadership with Integrity · 2027</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-link" aria-label="Facebook">f</a>
+          <a href="#" class="footer-social-link" aria-label="Twitter/X">𝕏</a>
+          <a href="#" class="footer-social-link" aria-label="Instagram">ig</a>
+          <a href="#" class="footer-social-link" aria-label="WhatsApp">wa</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="vision.html">Vision</a></li>
+          <li><a href="community.html">Community &amp; Security</a></li>
+          <li><a href="news.html">News &amp; Media</a></li>
+          <li><a href="join.html">Join the Movement</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Campaign Tags</h4>
+        <ul>
+          <li><a href="news.html">#ManguBokkos</a></li>
+          <li><a href="news.html">#LeadershipWithIntegrity</a></li>
+          <li><a href="news.html">#NewDawn</a></li>
+          <li><a href="news.html">#PaulMasiyer</a></li>
+          <li><a href="news.html">#SpreadTheMessage</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Contact Campaign</h4>
+        <address>Mangu/Bokkos Federal Constituency<br />Plateau State, Nigeria<br /><br />APC · 2027 General Elections</address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-legal">© 2025–2027 <img src="assets/img/logo/pmm-logo-white.svg" style="height:40px;"> Campaign. All rights reserved.</p>
+      <div class="footer-tags">
+        <span>#ManguBokkos</span><span>#LeadershipWithIntegrity</span><span>#PaulMasiyer</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/234XXXXXXXXXX?text=JOIN" class="fab-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Join via WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
